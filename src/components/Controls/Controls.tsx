@@ -1,9 +1,14 @@
 import AdjustButton from "../AdjustButton";
 
-function  Controls (){
+type ControlsProps = {
+  addTime: (ms: number) => void;
+};
+
+function  Controls ({addTime}: ControlsProps) {
+
     return (
         <>
-            <AdjustButton/>
+            <AdjustButton addTime={addTime}/>
         </>
     )
 }
