@@ -13,7 +13,6 @@ export  default function TimerDisplay({duration}: TimerDisplayProps) {
         return `${minute}:${seconds.toString().padStart(2, "0")}`
     }
 
-
     return (
         <>
             <div
