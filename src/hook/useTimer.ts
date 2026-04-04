@@ -3,7 +3,6 @@ import {useEffect, useState} from "react";
 const INITIAL_DURATION_MS = 25 * 60 * 1000;
 
 export default function useTimer() {
-
     const [duration, setDuration] = useState<number>(INITIAL_DURATION_MS);
 
     const [isRunning, setIsRunning] = useState<boolean>(false);
