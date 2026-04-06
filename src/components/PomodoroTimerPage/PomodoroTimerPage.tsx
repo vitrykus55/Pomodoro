@@ -10,11 +10,18 @@ export default function PomodoroTimerPage() {
 
     return (
         <div className='flex items-center justify-center bg-black min-h-screen'>
-            <div className='flex p-5 justify-center bg-[#F72798] flex-wrap rounded-xl'>
-                <ModeSwitcher/>
-                <TimerDisplay duration={timer.duration}/>
-                <Controls addTime={timer.addTime} isRunning={timer.isRunning} toggleRunning={timer.toggleRunning}/>
+                <div
+                    className='flex flex-wrap justify-center gap-10
+                   w-[1200px] min-h-[620px] p-10
+                   rounded-[36px]
+                   bg-[#F72798]
+                   border-[3px] border-[#4F4F4F]
+                   shadow-[12px_12px_0_#E8E1CC]'
+                >
+                    <ModeSwitcher/>
+                    <TimerDisplay duration={timer.duration}/>
+                    <Controls addTime={timer.addTime} isRunning={timer.isRunning} toggleRunning={timer.toggleRunning}/>
+                </div>
             </div>
-        </div>
-    )
-}
+            )
+            }
